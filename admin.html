@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.css">
+<link rel="stylesheet" href="../bootstrap-5.3.8-dist/fontawesome-free-7.1.0-web/css/all.css">
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.js"></script>
+   
+    <script src="../bootstrap-5.3.8-dist/jquery-3.7.1.min.js"></script>
+            <link rel="stylesheet" href="style.css">
+            <script src="ajax.js?v=1.1"></script>
+    <title>Admin panel</title>
+</head>
+<body>
+<script>function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      $('#blah').attr('src', e.target.result);
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+}</script>
+<!--------------------nav-bar----------------------->
+  <nav class="navbar  custom-nav navbar-expand-lg custom-nav navbar-dark shadow-sm">
+        <div class="container my-2">
+            <a class="navbar-brand ">Soaqk</a>
+            <button class="navbar-toggler" tybe="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse  " id="navbarNav">
+        <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto col align-items-start">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link p-3  "><i class="fa-solid fa-house me-2"></i>Home</a>
+            </li>
+        <li class="nav-item" id="admin-pan">
+            </li>
+            <li class="nav-item" id="profile">
+            </li>
+  <li class="nav-item " id="logout" >
+            </li>
+             <li class="nav-item">
+                <a href="cart.html" class="nav-link p-3 "><i class="fa-solid fa-cart-shopping me-2"></i>Cart</a>
+            </li>
+   
+          
+        </ul>
+</div>
+</div>
+</nav>
+<span id="search_r"></span>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 mt-5 ">
+    <div class="card  login-card shadow-sm p-4">
+        <div class="text-center mb-3">
+            <h2 class="h4 fw-bold text-center mb-0"><i class="fa-brands fa-product-hunt me-2"></i>Add New Product</h2>
+        </div>
+        <div class="card-body p-4">
+            <form id="product-new" enctype = "multipart/form-data" action="/">
+                <div class="mb-3">
+        <label for="prod-name" class="form-label fw-semibold"><i class="fa-brands fa-product-hunt me-2"></i>Product name</label>
+        <input name='prod-name' id='prod-n' class="form-control" placeholder="e.g xiaomi 15t">
+        </div> 
+        
+        <div class="row">
+            <div class="col-md-6 mb-3">
+        <label for="prod-price" class="form-label fw-semibold" ><i class="fa-solid fa-hand-holding-dollar me-2"></i>Product Price</label>
+        <div class="input-group">
+            <span class="input-group-text">$</span>
+        <input id='prod-p' name="prod-price" type="number" class="form-control">
+          </div>
+          </div>
+
+                    <div class="col-md-6 mb-3">
+
+        <label class="form-label fw-semibold" for="prod-qty"><i class="fa-solid fa-list-ol me-2"></i>Quantity</label>
+        <input id="prod-q" name="prod-qty" type="number" placeholder="0" class="form-control">
+</div>
+
+</div>
+<div class="mb-3">
+    <label for="prod-cid" class="form-label fw-semibold"><i class="fa-solid fa-table-list me-2"></i>category</label>
+            <select  id="prod-cid" name="prod-cid" class="form-select">
+                <option selected disabled>Chose a category . .</option>
+         
+</select>
+
+</div>
+
+<div class="mb-3">
+<label class="form-label fw-semibold" for="prod-desc"><i class="fa-regular fa-message me-2"></i>Descriptions</label>
+<textarea class="form-control" id="prod-d"  name="prod-desc" rows="3" placeholder="Descripte the Product. . ."></textarea>
+</div>
+<div class="mb-4">
+<label for="" class="form-label fw-semibold"><i class="fa-solid fa-image me-2"></i>Product Image </label>
+<input type="file" name="prod-src" onchange="readURL(this);" class="form-control mb-2" >
+
+
+<div class="d-flex justify-content-center border rounded bg-light p-2" style="min-height: 100px;">
+                                <img id="blah" src="" alt="Preview" 
+                                     class="img-fluid rounded shadow-sm" style="max-height: 150px;">
+                            </div>
+</div>
+<div class="d-flex justify-content-center">
+    <button type="submit" class="btn col-5 btn-custom  ">Submit</button>
+        <input type="reset" value="Reset Form" class="btn btn-custom col-5 mx-4" style="background: linear-gradient(135deg,#0044ff 30%, #10a887 75% );"
+">
+</div>
+</form>
+
+</div>
+</div>
+    </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

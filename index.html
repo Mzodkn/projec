@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.css">
+<link rel="stylesheet" href="../bootstrap-5.3.8-dist/fontawesome-free-7.1.0-web/css/all.css">
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.js"></script>
+    <script src="../bootstrap-5.3.8-dist/jquery-3.7.1.min.js"></script>
+            <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+
+
+</head>
+<body>
+<!--------------------nav-bar----------------------->
+    <nav class="navbar  custom-nav navbar-expand-lg  navbar-dark shadow-sm">
+        <div class="container my-3">
+            <a class="navbar-brand ">Soaqk</a>
+            <button class="navbar-toggler" tybe="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse  " id="navbarNav">
+                <input type="text" placeholder="Search" class="form-control mt-2 w-30 h-15"  id="search">
+        <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto col align-items-start g-0">
+            <li class="nav-item ">
+                <a href="index.html" class="nav-link p-3 mt-sm-3 mt-lg-0 "><i class="fa-solid fa-house me-1"></i>Home</a>
+            </li>
+        <li class="nav-item" id="admin-pan">
+            </li>
+            <li class="nav-item" id="profile">
+            </li>
+  <li class="nav-item " id="logout" >
+            </li>
+             <li class="nav-item">
+                <a href="cart.html" class="nav-link p-3 "><i class="fa-solid fa-cart-shopping me-1"></i>Cart</a>
+            </li>
+            <li class="nav-item">
+                <!-- <a href="#" class="nav-link p-3  "><i class="fa-solid fa-question me-1 "></i>About</a> -->
+            </li>
+          
+        </ul>
+</div>
+</div>
+</nav>
+<!------------------------------------------->
+<span id="search_r"></span>
+<div  class="container ">
+<div class="row justify-content-center mb-5 ">
+    <img src="/soaq/"  class="w-75 mt-5" id="img_for" alt="">
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    
+    <div class="col-12 col-md-9 order-2  order-md-1">
+      <div id="prod-sh" class="cont-glass row g-4 justify-content-center  mt-3">
+      </div>
+    </div>
+
+    <div class="col-12 col-md-3 order-1 order-md-2  mt-3 px-3">
+<div class="cont-glass mb-4 p-3 ">
+    <div class="mb-2">
+<p class="fw-bold">Category</p>
+<form class="">
+<select class="form-select select" i="cat" > 
+        <option value="" selected disabled>Select category</option>
+    <option value="1">Laptop</option>
+    <option value="2">Phones</option>
+    <option value="3">Playstations</option>
+</select>
+</div>
+
+<div class="mb-2">
+    <p class="fw-bold"> Sort By Price</p>
+    <select class="form-select select" i="pri">
+        <option value="" disabled selected>Price</option>
+
+<option value="l2h">Low to high</option>
+<option value="h2l">High to low</option>
+    </select>
+</div>
+<input type="reset" class="btn btn-custom mt-2 mb-4" id="prod-rest" style=" width: 100% ;max-width: 200px; ;           background: linear-gradient(135deg, #10a887 30%, #0044ff 75%);
+">
+</form>
+<div class="card bg-primary text-white p-3">
+    <small>Limited</small>
+    <p class=" card-text fw-bold">We Don't have discont right now @_0</p>
+</div>
+</div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+</body>
+
+      <footer class="text-center py-5 mt-5 text-muted small">
+    &copy; 2025 Muaaz 'Mzodkn' v| Thanks for reviewing my project
+  </footer>
+<script src="ajax.js?v=1.1"></script>
+</html>

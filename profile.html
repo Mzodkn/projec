@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+   <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.css">
+<link rel="stylesheet" href="../bootstrap-5.3.8-dist/fontawesome-free-7.1.0-web/css/all.css">
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.js"></script>
+   
+    <script src="../bootstrap-5.3.8-dist/jquery-3.7.1.min.js"></script>
+            <link rel="stylesheet" href="style.css">
+            <script src="ajax.js"></script>
+    <title>Profile</title>
+
+
+</head>
+<body>
+<!--------------------nav-bar----------------------->
+  <nav class="navbar  custom-nav navbar-expand-lg custom-nav navbar-dark shadow-sm">
+        <div class="container my-2">
+            <a class="navbar-brand ">Soaqk</a>
+            <button class="navbar-toggler" tybe="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse  " id="navbarNav">
+        <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto col align-items-start">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link p-3  "><i class="fa-solid fa-house me-2"></i>Home</a>
+            </li>
+        <li class="nav-item" id="admin-pan">
+            </li>
+            <li class="nav-item" id="profile">
+            </li>
+  <li class="nav-item " id="logout" >
+            </li>
+             <li class="nav-item">
+                <a href="cart.html" class="nav-link p-3 "><i class="fa-solid fa-cart-shopping me-2"></i>Cart</a>
+            </li>
+        
+          
+        </ul>
+</div>
+</div>
+</nav>
+<!----------->    
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <div class="card shadow-lg border-0 p-4" id="user-info">
+                <div class="text-center mb-4">
+                    <div class="bg-primary rounded-circle text-white d-inline-flex align-content-center justify-content-center pt-2 mb-3" style="width: 80px; height: 80px;">
+                        <i class="fas fa-user-tie fa-3x "></i>
+                    </div>
+                    <div>
+                        <h2 class="h4 fw-bold">My Profile</h2>
+
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="text" hidden id="user-id">
+                    <label class="form-label fw-bold"><i class="fas fa-user me-2 text-primary"></i>Username</label>
+                    <input id="user-name" class="form-control bg-light" type="text" disabled>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold"><i class="fas fa-key me-2 text-primary"></i>License Key</label>
+                    <input id="user-key" class="form-control bg-light" type="text" disabled maxlength="9">
+                </div>
+                <div class="d-grid gap-2 mt-4">
+                    <button id="btn-edit" class="btn btn-primary fw-bold">
+                        <i class="fas fa-edit me-2"></i>Edit Profile
+                    </button>
+                    <a href="#" id="logout-a" class="btn btn-outline-danger fw-bold">
+                        <i class="fas fa-sign-out-alt me-2"></i>Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+</body>
+</html>
